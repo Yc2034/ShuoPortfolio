@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: "./header.html", context: document.body, success: function (res) {
+          $("#header").html(res);
+          $(".menu>li>a").removeClass("active");
+          $($(".menu>li>a")[2]).addClass("active");
+        }
+      });
+      $.ajax({
+        url: "./footer.html", context: document.body, success: function (res) {
+          $("#footer").html(res);
+        }
+      });
+    }());
+  </script>
+</head>
+
+<body>
+  <main class="portfolio_container">
+    <header id="header"></header>
+    <div class="banner_wrap">
+      <img src="./images/portfolio/banner.png" alt="">
+    </div>
+    <!-- <div class="card_list" id="waterfall">
+      <div class="card_item"><img src="./images/portfolio/shuo.jpg" alt=""></div>
+    </div> -->
+    <div class="card_list">
+      <div class="card_list_part">
+        <div class="card_list_part_1_left">
+          <div class="card_item"><img src="./images/portfolio/shuo.jpg" alt="" />
+            <div class="card_item_desc">
+              <div class="desc_label_value">
+                <p class="desc_label">Title:</p>
+                <p class="desc_value">Infographic Poster</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Date:</p>
+                <p class="desc_value">Feb 7.2022</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Tool:</p>
+                <p class="desc_value">Illustrator</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Info:</p>
+                <p class="desc_value">The infographic poster ilustrate the differences
+                  between vegetarian and vegan by collection of data
+                  and illustrations of ther preferences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_list_part_1_right">
+          <div class="card_item"><img src="./images/portfolio/moodboard-3.png" alt="" />
+            <div class="card_item_desc">
+              <div class="desc_label_value">
+                <p class="desc_label">Title:</p>
+                <p class="desc_value">A Promotion Poster</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Date:</p>
+                <p class="desc_value">Dec 20,2018</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Tool:</p>
+                <p class="desc_value">Photoshop</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Info:</p>
+                <p class="desc_value">The poster was created for the product order exhibition based on the design
+                  concept of
+                  winter 19.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card_item"><img src="./images/portfolio/graphics1.jpg" alt="" />
+            <div class="card_item_desc">
+              <div class="desc_label_value">
+                <p class="desc_label">Title:</p>
+                <p class="desc_value">A Typographical Poster</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Date:</p>
+                <p class="desc_value">Feb 7.2022</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Tool:</p>
+                <p class="desc_value">Illustrator</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Info:</p>
+                <p class="desc_value">The poster was created by only using type glyphs for graphical rep-
+                  resentation,layout
+                  and design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card_list_part">
+        <div class="card_list_part_1_left">
+          <div class="card_item"><img style="width: 80%;" src="./images/portfolio/moodboard-5.png" alt="">
+            <div class="card_item_desc">
+              <div class="desc_label_value">
+                <p class="desc_label">Title:</p>
+                <p class="desc_value">A Promotion Poster</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Date:</p>
+                <p class="desc_value">Sep 9,2018</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Tool:</p>
+                <p class="desc_value">Photoshop</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Info:</p>
+                <p class="desc_value">The poster was created for the product order exhibition based on the design
+                  concept of
+                  fall 19.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item"><img src="./images/portfolio/img_777.jpg" alt="">
+            <div class="card_item_desc">
+              <div class="desc_label_value">
+                <p class="desc_label">Title:</p>
+                <p class="desc_value">Scarf Design</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Date:</p>
+                <p class="desc_value">July,2013</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Tool:</p>
+                <p class="desc_value">Watercolor</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Info:</p>
+                <p class="desc_value">Scarf pattern created for Ports summer 2014</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item"><img src="./images/portfolio/img_1.png" alt="">
+            <div class="card_item_desc">
+              <div class="desc_label_value">
+                <p class="desc_label">Title:</p>
+                <p class="desc_value">Scarf Design</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Date:</p>
+                <p class="desc_value">Oct.2015</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Tool:</p>
+                <p class="desc_value">Photoshop</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Info:</p>
+                <p class="desc_value">Scarf pattern created for EP winter 2016 based on the Year
+                  of the Monkey in Chinese sign.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_list_part_1_right">
+          <div class="card_item"><img src="./images/portfolio/Shuo-A01PostcardMailer-front.jpg"
+              alt="">
+            <img src="./images/portfolio/Shuo-A01PostcardMailer-back.jpg" alt="">
+            <div class="card_item_desc">
+              <div class="desc_label_value">
+                <p class="desc_label">Title:</p>
+                <p class="desc_value">Postcard Mailer</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Date:</p>
+                <p class="desc_value">Feb 7.2022</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Tool:</p>
+                <p class="desc_value">Photoshop</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Info:</p>
+                <p class="desc_value">The self-promotional marketing piece is to help identify me
+                  and my services to potential dients.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item"><img style="width: 85%;" src="./images/portfolio/img_5.png" alt="">
+            <div class="card_item_desc">
+              <div class="desc_label_value">
+                <p class="desc_label">Title:</p>
+                <p class="desc_value">Scarf Design</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Date:</p>
+                <p class="desc_value">May,2014</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Tool:</p>
+                <p class="desc_value">Watercolor & color pencil</p>
+              </div>
+              <div class="desc_label_value">
+                <p class="desc_label">Info:</p>
+                <p class="desc_value">Scarf pattem created for EP summer 2015</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+  </main>
+</body>
+
+</html>

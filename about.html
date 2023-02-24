@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: "./header.html", context: document.body, success: function (res) {
+          $("#header").html(res);
+          $(".menu>li>a").removeClass("active");
+          $($(".menu>li>a")[1]).addClass("active");
+        }
+      });
+      $.ajax({
+        url: "./footer.html", context: document.body, success: function (res) {
+          $("#footer").html(res);
+        }
+      });
+    }());
+  </script>
+</head>
+
+<body>
+  <main class="about_container">
+    <header id="header"></header>
+    <div class="banner_wrap">
+      <img src="./images/about/banner.png" alt="">
+      <p class="banner_title">Shou's fashion sketch</p>
+    </div>
+    <div class="main_wrap">
+      <p class="main_wrap_title">
+        HELLO,I AM SHUO HAO
+      </p>
+      <div class="main_wrap_desc">I have had a strong passion for painting since I was a child, so I have been learning
+        it since I was 7 years old. I studied at Tianjin Academy of Fine Arts with a Bachelor's degree in F ashion and
+        Pattern Design. After that I worked in the fashion industry for more than 7 years. Due to the rise of digital
+        media design, I took a program of Interactiv Media Management for one year and since then I am fascinated by
+        digital design. I enjoy the pleasure of creative processes of graphic design, UX design, website design,
+        animation creation, video creation and so on, which would be the center of my design career.in the future.</div>
+      <p class="main_wrap_title">
+        HOBBIES AND INTERESTS
+      </p>
+      <div class="hobbies_interests">
+        <div class="hobbies_interests_item">
+          <div class="hobbies_interests_left">
+            <p class="hobbies_interests_title">
+              Painting
+            </p>
+            <div class="hobbies_interests_desc">
+              Painting is a wonderful way for me to relax. it can develop my critical thinking skills, and enhance my
+              fine motor skills. It also build my confidence, promote a positive attitude and nurture emotional growth.
+            </div>
+          </div>
+          <div class="hobbies_interests_right">
+            <img src="./images/about/sketch-1.png" alt="">
+            <p>Shuo's shetch</p>
+          </div>
+        </div>
+        <div class="hobbies_interests_item">
+          <div class="hobbies_interests_left">
+            <p class="hobbies_interests_title">
+              Travelling
+            </p>
+            <div class="hobbies_interests_desc">
+              Travel gives me the opportunity to experience
+              other cultures. Once I go to other place or
+              other countries, I can experience and appreci-
+              ate the way that other people live.
+            </div>
+          </div>
+          <div class="hobbies_interests_right">
+            <img src="./images/about/sketch-2.jpg" alt="">
+            <p>Shuo's shetch</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer id="footer"></footer>
+  </main>
+</body>
+
+</html>

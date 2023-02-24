@@ -1,0 +1,34 @@
+<div class="header_wrap">
+  <div class="logo">
+    <img src="./images/logo.jpg" alt="logo">
+  </div>
+  <ul class="menu">
+    <li><a class="active" href="./index.html">HOME</a></li>
+    <li><a href="./about.html">ABOUT</a></li>
+    <li class="portfolio">
+      <a href="#">PORTFOLIO</a>
+      <ul class="submenu">
+        <li><a href="./portfolio.html">Graphics</a></li>
+        <li><a href="./portfolio-web.html">Web</a></li>
+        <li><a href="./portfolio-uiux.html">UI/UX</a></li>
+      </ul>
+    </li>
+    <li><a href="./resume.html">RESUME</a></li>
+    <li><a href="./contact.html">CONTACT</a></li>
+  </ul>
+</div>
+
+<script>
+  $(function () {
+    $(".menu>li.portfolio").on("mouseover", function (e) {
+      $(this).find(".submenu").css({ height: '104px' })
+    });
+    $(".menu>li>a:contains('PORTFOLIO')").on("mouseout", function (e) {
+      $(this).siblings(".submenu").css({ height: '0' })
+    });
+    $(".submenu>li").on("click", function(e){
+      $(this).siblings().find("a").removeClass("active");
+      $(this).find("a").addClass("active");
+    })
+  })
+</script>

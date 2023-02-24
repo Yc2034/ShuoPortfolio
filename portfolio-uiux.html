@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio-UIUX</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/portfolio-uiux.css">
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: "./header.html", context: document.body, success: function (res) {
+          $("#header").html(res);
+          $(".menu>li>a").removeClass("active");
+          $($(".menu>li>a")[2]).addClass("active");
+        }
+      });
+      $.ajax({
+        url: "./footer.html", context: document.body, success: function (res) {
+          $("#footer").html(res);
+        }
+      });
+    }());
+  </script>
+</head>
+
+<body>
+  <main class="contact_container">
+    <header id="header"></header>
+    <div class="banner_wrap">
+      <img src="./images/portfolio-uiux/banner.jpg" alt="">
+    </div>
+    <div class="main_wrap">
+      <p class="main_wrap_title">
+        WEBSIT RE-DESIGN<br />
+        FOR YALE SCHOOL OF ART
+      </p>
+      <div class="portfolio_desc">
+        <div class="portfolio_desc_label_value">
+          <p class="portfolio_desc_label">Title:</p>
+          <p class="portfolio_desc_value">Website Re-design</p>
+        </div>
+        <div class="portfolio_desc_label_value">
+          <p class="portfolio_desc_label">Date:</p>
+          <p class="portfolio_desc_value">Dec 3,2021</p>
+        </div>
+        <div class="portfolio_desc_label_value">
+          <p class="portfolio_desc_label">Tool:</p>
+          <p class="portfolio_desc_value">Photoshop,Adobe XD</p>
+        </div>
+        <div class="portfolio_desc_label_value">
+          <p class="portfolio_desc_label">Info:</p>
+          <p class="portfolio_desc_value">Redesign a poorly designed website and recreate its homepage and twoother
+            inside pages to improve its UX design by using design theory and Ul UX
+            knowledge.</p>
+        </div>
+      </div>
+      <div class="part_1">
+        <div class="part_1_left">
+          <img src="./images/portfolio-uiux/art1.png" alt="">
+        </div>
+        <div class="part_1_right">
+          <img src="./images/portfolio-uiux/art2.png" alt="">
+        </div>
+      </div>
+      <div class="part_2">
+        <div class="part_2_item">
+          <img src="./images/portfolio-uiux/part1.png" alt="">
+        </div>
+        <div class="part_2_item">
+          <img src="./images/portfolio-uiux/part2.png" alt="">
+        </div>
+        <div class="part_2_item">
+          <img src="./images/portfolio-uiux/part3.png" alt="">
+        </div>
+        <div class="part_2_item">
+          <img src="./images/portfolio-uiux/part4.png" alt="">
+        </div>
+        <div class="part_2_item">
+          <img src="./images/portfolio-uiux/part5.png" alt="">
+        </div>
+        <div class="part_2_item">
+          <img src="./images/portfolio-uiux/part6.png" alt="">
+        </div>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+  </main>
+</body>
+
+</html>

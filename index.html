@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/homepage.css">
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: "./header.html", context: document.body, success: function (res) {
+          $("#header").html(res);
+          $(".menu>li>a").removeClass("active");
+          $($(".menu>li>a")[0]).addClass("active");
+        }
+      });
+      $.ajax({
+        url: "./footer.html", context: document.body, success: function (res) {
+          $("#footer").html(res);
+        }
+      });
+      $(".experiences_item .btn").on("click", function (e) {
+        $(this).siblings(".experiences_inner").addClass("slide-in-left");
+      })
+      $(".experiences_inner .close").on("click", function (e) {
+        $(this).parent().removeClass("slide-in-left");
+      });
+
+    }());
+  </script>
+</head>
+
+<body>
+  <main class="homepage_container">
+    <header id="header"></header>
+    <div class="banner_wrap">
+      <img src="./images/homepage/banner.jpg" alt="">
+    </div>
+    <div class="about_me">
+      <p class="home_title">About me</p>
+      <div class="about_me_main">
+        <div class="about_me_left">
+          <div class="about_me_desc">An enthusiastic, creative designer with 7+ years of experience in fashion,
+            graphics,
+            advertisement, and web design. Skilled in sketching, layout, typography and Adobe software collections.
+          </div>
+          <button class="btn"><a href="./portfolio.html">See my works</a></button>
+        </div>
+        <div class="about_me_right">
+          <img src="./images/homepage/me.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="shuo_banner">
+      <img src="./images/homepage/shuo-banner.gif" alt="">
+    </div>
+
+    <div class="education">
+      <p class="home_title">Education</p>
+      <div class="education_item_list">
+        <div class="education_item">
+          <div class="education_item_title">
+            <img src="./images/homepage/xw.png" alt="">
+            <span>2008-2012</span>
+          </div>
+          <ul>
+            <li>Bachelor degree Fashion Design</li>
+            <li>Tianjin Academme of Fine Arts</li>
+          </ul>
+        </div>
+
+        <div class="education_item">
+          <div class="education_item_title">
+            <img src="./images/homepage/xw.png" alt="">
+            <span>2020-2021</span>
+          </div>
+          <ul>
+            <li>Graduate Certificate Event Management</li>
+            <li>Algonquin College</li>
+          </ul>
+        </div>
+
+        <div class="education_item">
+          <div class="education_item_title">
+            <img src="./images/homepage/xw.png" alt="">
+            <span>2020-2021</span>
+          </div>
+          <ul>
+            <li>Graduate Certificate Interactive Media Management</li>
+            <li>Algonquin College</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="experiences">
+      <p class="home_title">Experiences</p>
+      <div class="experiences_item_list">
+        <div class="experiences_item">
+          <img class="image" src="./images/homepage/experience1.jpg" alt="">
+          <!-- <div class="image"></div> -->
+          <p class="time_range">2012-2013</p>
+          <button class="btn">Learn more</button>
+          <div class="experiences_inner">
+            <div class="experiences_inner_header">
+              <p>Design</p>
+              <p>Sunshine Outdoor Leisure | Shanghai, China</p>
+              <p>Mar 2021 -Sep 2021</p>
+            </div>
+            <ul class="experiences_inner_body">
+              <li>
+                Created work plans and design guidances for North American, European, and Asian markets.</li>
+              <li>Organized workflows for the design team.</li>
+              <li>Reviewed and modified product samples based on design guidances and aesthetic requirements.</li>
+              <li>Trained the marketing department on product design concepts.</li>
+            </ul>
+            <p class="close">Close</p>
+          </div>
+        </div>
+        <div class="experiences_item">
+          <img class="image" src="./images/homepage/experience2.jpg" alt="">
+          <!-- <div class="image"></div> -->
+          <p class="time_range">2013-2019</p>
+          <button class="btn">Learn more</button>
+          <div class="experiences_inner">
+            <div class="experiences_inner_header">
+              <p>Senior Designer</p>
+              <p>EP | Jiaxing&Shanghai, China</p>
+              <p>May 2013 - June 2019</p>
+            </div>
+            <ul class="experiences_inner_body">
+              <li>Developed and designed fashion collections.</li>
+              <li>Created 8-10 mood boards for 4 fashion lines of over 150 clothing items and accessories each season.
+              </li>
+              <li>Assisted Marketing Department to create posters, e-brochures and package designs.</li>
+              <li>Developed over 50 scarves each season. Boosted the annual sales by 40% in 2015. More than 20 patterns
+                of scarves have been applied for patents.</li>
+            </ul>
+            <p class="close">Close</p>
+          </div>
+        </div>
+        <div class="experiences_item">
+          <img class="image" src="./images/homepage/experience3.jpg" alt="">
+          <!-- <div class="image"></div> -->
+          <p class="time_range">2021</p>
+          <button class="btn">Learn more</button>
+          <div class="experiences_inner">
+            <div class="experiences_inner_header">
+              <p>Assistant Designer</p>
+              <p>Ports | Xiamen, China</p>
+              <p>July 2012 - May 2013</p>
+            </div>
+            <ul class="experiences_inner_body">
+              <li>Collaborated with the design team and converted their ideas into sketches.</li>
+              <li>Created scarves for entire women’s fashion lines.</li>
+              <li>Created product brochures for buyers.</li>
+            </ul>
+            <p class="close">Close</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="software">
+      <p class="home_title">Software</p>
+      <p class="tip">Proficient in a collection of design software.</p>
+      <div class="software_list">
+        <div class="software_item">
+          <p class="icon">Ai</p>
+          <p>Adobe</p>
+          <p>lllustrator</p>
+        </div>
+        <div class="software_item">
+          <p class="icon">Id</p>
+          <p>Adobe</p>
+          <p>InDesigin</p>
+        </div>
+        <div class="software_item">
+          <p class="icon">Xd</p>
+          <p>Adobe</p>
+          <p>XD</p>
+        </div>
+        <div class="software_item">
+          <p class="icon">Ae</p>
+          <p>Adobe</p>
+          <p>After Effects</p>
+        </div>
+        <div class="software_item">
+          <p class="icon">Pr</p>
+          <p>Adobe</p>
+          <p>Premiere Pro</p>
+        </div>
+        <div class="software_item">
+          <p class="icon">Ps</p>
+          <p>Adobe</p>
+          <p>Photoshop</p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio-Web</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/portfolio-web.css">
+  <script src="./js/jquery.min.js"></script>
+  <script defer>
+    $(function () {
+      $.ajax({
+        url: "./header.html", context: document.body, success: function (res) {
+          $("#header").html(res);
+          $(".menu>li>a").removeClass("active");
+          $($(".menu>li>a")[2]).addClass("active");
+        }
+      });
+      $.ajax({
+        url: "./footer.html", context: document.body, success: function (res) {
+          $("#footer").html(res);
+        }
+      });
+    }());
+  </script>
+</head>
+
+<body>
+  <main class="portfolio_web_container">
+    <header id="header"></header>
+    <div class="banner_wrap">
+      <img src="./images/portfolio-web/banner.jpg" alt="">
+    </div>
+    <div class="main_wrap">
+      <div class="cloud_coffee">
+        <p class="main_wrap_title">
+          Cloud Coffee
+        </p>
+        <div class="portfolio_desc">
+          <div class="portfolio_desc_label_value">
+            <p class="portfolio_desc_label">Title:</p>
+            <p class="portfolio_desc_value">Web Page Mockups</p>
+          </div>
+          <div class="portfolio_desc_label_value">
+            <p class="portfolio_desc_label">Date:</p>
+            <p class="portfolio_desc_value">Nov 4,v2021</p>
+          </div>
+          <div class="portfolio_desc_label_value">
+            <p class="portfolio_desc_label">Tool:</p>
+            <p class="portfolio_desc_value">Photoshop,VScode</p>
+          </div>
+          <div class="portfolio_desc_label_value">
+            <p class="portfolio_desc_label">Website:</p>
+            <p class="portfolio_desc_value">
+              <a href="https://hao00025.edumedia.ca/mtm1511/shuo-coffeeshop-website/index.html"
+                target="_blank">https://hao00025.edumedia.ca/mtm1511/shuo-coffeeshop-website/index.html</a>
+            </p>
+          </div>
+        </div>
+        <div class="part_1">
+          <div class="part_1_col1">
+            <div class="part_1_item">
+              <img src="./images/portfolio-web/part1-1.jpg" alt="">
+            </div>
+            <div class="part_1_item">
+              <img src="./images/portfolio-web/part1-1-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="part_1_item">
+            <img src="./images/portfolio-web/part1-2.jpg" alt="">
+          </div>
+          <div class="part_1_item">
+            <img src="./images/portfolio-web/part-3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="castillo_photography">
+        <p class="main_wrap_title">
+          Castillo Photography
+        </p>
+        <div class="portfolio_desc">
+          <div class="portfolio_desc_label_value">
+            <p class="portfolio_desc_label">Title:</p>
+            <p class="portfolio_desc_value">Website planning,design and evaluation</p>
+          </div>
+          <div class="portfolio_desc_label_value">
+            <p class="portfolio_desc_label">Date:</p>
+            <p class="portfolio_desc_value">Dec 17,2021</p>
+          </div>
+          <div class="portfolio_desc_label_value">
+            <p class="portfolio_desc_label">Tool:</p>
+            <p class="portfolio_desc_value">Figma</p>
+          </div>
+          <div class="portfolio_desc_label_value">
+            <p class="portfolio_desc_label">Info:</p>
+            <p class="portfolio_desc_value">Developed awedding photograhpy website.The tool was only via Figma.Built a design system and color schemes to fit the branding package.</p>
+          </div>
+        </div>
+        <div class="castillo_photography_img">
+          <img src="./images/portfolio-web/castillo-photography-Desktop.png" alt="">
+        </div>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+  </main>
+</body>
+
+</html>

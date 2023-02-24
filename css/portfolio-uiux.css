@@ -1,0 +1,100 @@
+.contact_container .banner_wrap img {
+  max-width: 100%;
+}
+
+.contact_container .main_wrap .portfolio_desc {
+  width: 100%;
+  padding: 2.5rem 0;
+}
+
+.contact_container .main_wrap .portfolio_desc .portfolio_desc_label_value {
+  color: #321185;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_container .main_wrap .portfolio_desc .portfolio_desc_label_value .portfolio_desc_label {
+  font-weight: 600;
+}
+
+.contact_container .main_wrap .portfolio_desc .portfolio_desc_label_value .portfolio_desc_value {
+  font-size: 1.1rem;
+  margin: 0 0 0 5px;
+}
+
+.contact_container .main_wrap .portfolio_desc .portfolio_desc_label_value + .portfolio_desc_label_value {
+  margin-top: 1rem;
+}
+
+.contact_container .main_wrap .part_1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 2rem 0;
+}
+
+.contact_container .main_wrap .part_1 .part_1_left {
+  width: 50%;
+}
+
+.contact_container .main_wrap .part_1 .part_1_left img {
+  width: 100%;
+}
+
+.contact_container .main_wrap .part_1 .part_1_right {
+  width: 25%;
+}
+
+.contact_container .main_wrap .part_1 .part_1_right img {
+  width: 100%;
+}
+
+.contact_container .main_wrap .part_1::after {
+  position: absolute;
+  bottom: 0;
+  content: "Original website screenshot";
+  font-size: 1.1rem;
+  color: #70698d;
+}
+
+.contact_container .main_wrap .part_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3rem 0 0;
+}
+
+.contact_container .main_wrap .part_2 .part_2_item {
+  width: 15%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact_container .main_wrap .part_2 .part_2_item img {
+  width: 100%;
+  -webkit-filter: drop-shadow(2px 1px 5px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(2px 1px 5px rgba(0, 0, 0, 0.2));
+}
+
+.contact_container .main_wrap .part_2 .part_2_item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact_container .main_wrap .part_2 .part_2_item:hover img {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+/*# sourceMappingURL=portfolio-uiux.css.map */

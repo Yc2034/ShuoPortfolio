@@ -1,0 +1,55 @@
+.contact_container .banner_wrap img {
+  max-width: 100%;
+}
+
+.contact_container .main_wrap .form_wrap {
+  color: #707070;
+  font-size: 1.5rem;
+  width: 70%;
+  margin: 4rem auto 0;
+}
+
+.contact_container .main_wrap .form_wrap .form_wrap_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact_container .main_wrap .form_wrap .form_wrap_item .form_wrap_item_label {
+  text-align: right;
+  min-width: 180px;
+}
+
+.contact_container .main_wrap .form_wrap .form_wrap_item .form_wrap_item_input {
+  margin: 0 0 0 3rem;
+}
+
+.contact_container .main_wrap .form_wrap .form_wrap_item .form_wrap_item_input input, .contact_container .main_wrap .form_wrap .form_wrap_item .form_wrap_item_input textarea {
+  display: inline-block;
+  min-width: 330px;
+  width: 50%;
+  border: 1px solid #b0b0b0;
+  background: #ffffff;
+  font-size: 1.5rem;
+}
+
+.contact_container .main_wrap .form_wrap .form_wrap_item .form_wrap_item_input input {
+  height: 40px;
+  line-height: 40px;
+}
+
+.contact_container .main_wrap .form_wrap .form_wrap_item .form_wrap_item_input .btn {
+  padding: 8px 2rem;
+}
+
+.contact_container .main_wrap .form_wrap .form_wrap_item + .form_wrap_item {
+  margin: 1rem 0 0;
+}
+/*# sourceMappingURL=contact.css.map */

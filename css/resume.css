@@ -1,0 +1,259 @@
+.resume_container .banner_wrap img {
+  width: 100%;
+}
+
+.resume_container .main_wrap {
+  margin: 4rem auto 5rem;
+}
+
+.resume_container .main_wrap .main_wrap_title {
+  font-size: 2rem;
+}
+
+.resume_container .main_wrap .main_wrap_desc {
+  font-size: 1rem;
+  line-height: 1.45rem;
+  margin: 3rem 0 0;
+  color: #321185;
+}
+
+.resume_container .main_wrap .main_wrap_desc + .main_wrap_title {
+  margin: 4rem 0 0;
+}
+
+.resume_container .main_wrap .skill_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 3rem 0 0;
+}
+
+.resume_container .main_wrap .skill_list .skill_item {
+  min-width: 200px;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+  color: #321185;
+  -webkit-box-shadow: 2px 1px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 1px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f7f0da;
+}
+
+.resume_container .main_wrap .skill_list .skill_item .skill_item_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.resume_container .main_wrap .skill_list .skill_item ul {
+  margin: 0.4rem 0 0;
+}
+
+.resume_container .main_wrap .skill_list .skill_item ul li {
+  margin: 0.3rem 0 0;
+  padding-left: 1em;
+  text-indent: -.7em;
+  font-size: 1rem;
+}
+
+.resume_container .main_wrap .skill_list .skill_item ul li::before {
+  content: "- ";
+}
+
+.resume_container .main_wrap .skill_list .skill_item ul li + li {
+  margin: 0.3rem 0 0;
+}
+
+.resume_container .main_wrap .my_experience,
+.resume_container .main_wrap .my_education {
+  margin: 4rem auto 0;
+}
+
+.resume_container .main_wrap .my_experience .time_line,
+.resume_container .main_wrap .my_education .time_line {
+  margin: 3rem 0 0;
+  position: relative;
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content,
+.resume_container .main_wrap .my_education .time_line .time_line_content {
+  position: relative;
+  color: #321185;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.1rem;
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content .time_line_content_date,
+.resume_container .main_wrap .my_education .time_line .time_line_content .time_line_content_date {
+  margin: 0 8rem 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+  font-style: italic;
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content .time_line_content_div,
+.resume_container .main_wrap .my_education .time_line .time_line_content .time_line_content_div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 10px;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 1px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 1px 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content .time_line_content_div .time_line_content_div_title,
+.resume_container .main_wrap .my_education .time_line .time_line_content .time_line_content_div .time_line_content_div_title {
+  font-weight: 600;
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content .time_line_content_div ul,
+.resume_container .main_wrap .my_education .time_line .time_line_content .time_line_content_div ul {
+  margin: 1rem 0 0;
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content .time_line_content_div ul li,
+.resume_container .main_wrap .my_education .time_line .time_line_content .time_line_content_div ul li {
+  margin: 0.5rem 0 0;
+  padding-left: 1em;
+  text-indent: -.7em;
+  font-size: 1.1rem;
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content .time_line_content_div ul li::before,
+.resume_container .main_wrap .my_education .time_line .time_line_content .time_line_content_div ul li::before {
+  content: "- ";
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content .time_line_content_div ul li + li,
+.resume_container .main_wrap .my_education .time_line .time_line_content .time_line_content_div ul li + li {
+  margin: 1.4rem 0 0;
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content::before,
+.resume_container .main_wrap .my_education .time_line .time_line_content::before {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  width: 1rem;
+  height: 1rem;
+  border: 4px solid #f3d990;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.resume_container .main_wrap .my_experience .time_line .time_line_content + .time_line_content,
+.resume_container .main_wrap .my_education .time_line .time_line_content + .time_line_content {
+  margin: 3.5rem 0 0;
+}
+
+.resume_container .main_wrap .my_experience .time_line::after,
+.resume_container .main_wrap .my_education .time_line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: #dbceed;
+  width: 5px;
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.resume_container .main_wrap .my_education {
+  margin: 4rem 0 0;
+}
+
+.resume_container .main_wrap .my_education li {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+}
+
+.resume_container .main_wrap .my_education li::before {
+  content: "" !important;
+}
+
+.resume_container .main_wrap .my_education li + li {
+  margin: 1rem 0 0 !important;
+}
+
+.resume_container .main_wrap .my_projects {
+  margin: 4rem 0 0;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0 0;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_left {
+  width: 48%;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_right {
+  width: 48%;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_card {
+  background-color: #ece6f8;
+  color: #321185;
+  font-size: 14px;
+  padding: 1.3rem;
+  border-radius: 1.25rem;
+  margin: 0 auto;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_card .thumb img {
+  width: 100%;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_card .card_desc {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_card .card_desc .desc_label_value {
+  color: #321185;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_card .card_desc .desc_label_value .desc_label {
+  font-weight: 600;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_card .card_desc .desc_label_value .desc_value {
+  font-size: 16px;
+  margin: 0 0 0 5px;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_card .card_desc .desc_label_value + .desc_label_value {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.resume_container .main_wrap .my_projects .my_projects_set .my_projects_set_card + .my_projects_set_card {
+  margin: 3rem auto 0;
+}
+/*# sourceMappingURL=resume.css.map */

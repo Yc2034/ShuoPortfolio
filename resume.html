@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/resume.css">
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: "./header.html", context: document.body, success: function (res) {
+          $("#header").html(res);
+          $(".menu>li>a").removeClass("active");
+          $($(".menu>li>a")[3]).addClass("active");
+        }
+      });
+      $.ajax({
+        url: "./footer.html", context: document.body, success: function (res) {
+          $("#footer").html(res);
+        }
+      });
+    }());
+  </script>
+</head>
+
+<body>
+  <main class="resume_container">
+    <header id="header"></header>
+    <div class="banner_wrap">
+      <img src="./images/resume/banner.jpg" alt="">
+    </div>
+    <div class="main_wrap">
+      <p class="main_wrap_title">
+        HELLO,I AM SHUO HAO
+      </p>
+      <div class="main_wrap_desc">An enthusiastic,creative designer with 7+years of experience in fashion,
+        graphics,advertisement,and web design.Skilled in sketching,layout,
+        typography and Adobe software collections.With a great interest in digital
+        media design,I started to study Interactive Media Management in 2021.
+        Currently looking for job opportunities related to interactive media.</div>
+      <p class="main_wrap_title">
+        My Skills
+      </p>
+      <div class="skill_list">
+        <div class="skill_item">
+          <p class="skill_item_title">Tech Skills</p>
+          <ul>
+            <li>Photoshop</li>
+            <li>lllustrator</li>
+            <li>InDesign</li>
+            <li>Adobe XD</li>
+            <li>Acrobat</li>
+            <li>Adobe AE</li>
+          </ul>
+        </div>
+        <div class="skill_item">
+          <p class="skill_item_title">Design Skills</p>
+          <ul>
+            <li>Typography</li>
+            <li>Graphic</li>
+            <li>Layout</li>
+            <li>Hand Sketch</li>
+            <li>Motion Graphic</li>
+            <li>Color Theory</li>
+          </ul>
+        </div>
+        <div class="skill_item">
+          <p class="skill_item_title">Sort Skills</p>
+          <ul>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Problem Solving</li>
+            <li>Creativity</li>
+            <li>Planning</li>
+          </ul>
+        </div>
+      </div>
+      <div class="my_experience">
+        <p class="main_wrap_title">My Experience</p>
+        <div class="time_line">
+          <div class="time_line_content">
+            <p class="time_line_content_date">Mar 2021 - Sep 2021</p>
+            <div class="time_line_content_div">
+              <p class="time_line_content_div_title">Designer <br />Sunshine Outdoor Leisure Shanghai.China</p>
+              <ul>
+                <li>Created work plans and design guidances
+                  for North American,European.and Asian
+                  markets.</li>
+                <li>Organized workflows for the design team</li>
+              </ul>
+            </div>
+          </div>
+          <div class="time_line_content">
+            <p class="time_line_content_date">May 2013 - June 2019</p>
+            <div class="time_line_content_div">
+              <p class="time_line_content_div_title">Designer <br />EP Jiaxing&Shanghai,China</p>
+              <ul>
+                <li>Developed and designed fashion collec-
+                  tions.</li>
+                <li>Created 8-10 mood boards for 4 fashion
+                  lines</li>
+                <li>Assisted Marketing Department to create
+                  posters,e-brochures andpackage designs.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="time_line_content">
+            <p class="time_line_content_date">Juy 2012 - May 2013</p>
+            <div class="time_line_content_div">
+              <p class="time_line_content_div_title">Assistant Designer <br />Ports I Xiamen.China</p>
+              <ul>
+                <li>Collaborated with the design team and
+                  converted their ideas intosketches.</li>
+                <li>Created scarves for entire women's fash-
+                  ion lines.</li>
+                <li>Created product brochures for buyers.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my_education">
+        <p class="main_wrap_title">My Education</p>
+        <div class="time_line">
+          <div class="time_line_content">
+            <p class="time_line_content_date">Sep 2021- April 2022</p>
+            <div class="time_line_content_div">
+              <ul>
+                <li>Post-Graduate Certificate</li>
+                <li>Interactive Media Management</li>
+                <li>Algonquin College-Ottawa,ON</li>
+              </ul>
+            </div>
+          </div>
+          <div class="time_line_content">
+            <p class="time_line_content_date">Sep 2020 - April 2021</p>
+            <div class="time_line_content_div">
+              <ul>
+                <li>Post-Graduate Certificate</li>
+                <li>Event Management</li>
+                <li>Algonquin College-Ottawa,ON</li>
+              </ul>
+            </div>
+          </div>
+          <div class="time_line_content">
+            <p class="time_line_content_date">Sep 2008 - Juy 2012</p>
+            <div class="time_line_content_div">
+              <ul>
+                <li>Bachelor of Arts</li>
+                <li>Fashion and Textile Design</li>
+                <li>Tianjin Academy of Fine Arts</li>
+                <li>Tianjin,China</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my_projects">
+        <p class="main_wrap_title">My Projects</p>
+        <div class="my_projects_set">
+          <div class="my_projects_set_left">
+            <div class="my_projects_set_card">
+              <div class="thumb">
+                <img src="./images/resume/projects1.jpg" alt="">
+              </div>
+              <div class="card_desc">
+                <div class="desc_label_value">
+                  <p class="desc_label">Title:</p>
+                  <p class="desc_value">Accessory design</p>
+                </div>
+                <div class="desc_label_value">
+                  <p class="desc_label">Date:</p>
+                  <p class="desc_value">Jan 2014-Oct 2014</p>
+                </div>
+                <div class="desc_label_value">
+                  <p class="desc_label">Info:</p>
+                  <p class="desc_value">Accessory design of uniform for China
+                    Pavilion in Milano Expo</p>
+                </div>
+              </div>
+            </div>
+            <div class="my_projects_set_card">
+              <div class="thumb">
+                <img src="./images/resume/projects2.png" alt="">
+              </div>
+              <div class="card_desc">
+                <div class="desc_label_value">
+                  <p class="desc_label">Title:</p>
+                  <p class="desc_value">Promotion package for IMM</p>
+                </div>
+                <div class="desc_label_value">
+                  <p class="desc_label">Date:</p>
+                  <p class="desc_value">April 12.2022</p>
+                </div>
+                <div class="desc_label_value">
+                  <p class="desc_label">Info:</p>
+                  <p class="desc_value">Created motion graphics video,e-brochure
+                    posters and web banner ads to boost IMM
+                    application</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="my_projects_set_right">
+            <div class="my_projects_set_card">
+              <div class="thumb">
+                <img src="./images/resume/projects3.png" alt="">
+              </div>
+              <div class="card_desc">
+                <div class="desc_label_value">
+                  <p class="desc_label">Title:</p>
+                  <p class="desc_value">Charity event-Sunday Night Games</p>
+                </div>
+                <div class="desc_label_value">
+                  <p class="desc_label">Date:</p>
+                  <p class="desc_value">March 28.2021</p>
+                </div>
+                <div class="desc_label_value">
+                  <p class="desc_label">Info:</p>
+                  <p class="desc_value">Organization of an online charity event-
+                    Sunday Night Games for DaveSmith Youth
+                    Treatment Center</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+  </main>
+</body>
+
+</html>

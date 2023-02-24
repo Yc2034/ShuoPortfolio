@@ -1,0 +1,53 @@
+.contact_container {
+  .banner_wrap {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .main_wrap {
+
+    .form_wrap {
+      color: #707070;
+      font-size: 1.5rem;
+      width: 70%;
+      margin: 4rem auto 0;
+
+      .form_wrap_item {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        .form_wrap_item_label {
+          text-align: right;
+          min-width: 180px;
+        }
+
+        .form_wrap_item_input {
+          margin: 0 0 0 3rem;
+
+          input, textarea {
+            display: inline-block;
+            min-width: 330px;
+            width: 50%;
+            border: 1px solid #b0b0b0;
+            background: #ffffff;
+            font-size: 1.5rem;
+          }
+          input{
+            height: 40px;
+            line-height: 40px;
+          }
+          .btn{
+            padding:8px 2rem;
+          }
+        }
+
+        & + .form_wrap_item{
+          margin: 1rem 0 0;
+        }
+      }
+    }
+  }
+}

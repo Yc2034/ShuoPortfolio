@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: "./header.html", context: document.body, success: function (res) {
+          $("#header").html(res);
+          $(".menu>li>a").removeClass("active");
+          $($(".menu>li>a")[4]).addClass("active");
+        }
+      });
+      $.ajax({
+        url: "./footer.html", context: document.body, success: function (res) {
+          $("#footer").html(res);
+        }
+      });
+    }());
+  </script>
+</head>
+
+<body>
+  <main class="contact_container">
+    <header id="header"></header>
+    <div class="banner_wrap">
+      <img src="./images/contact/banner.png" alt="">
+    </div>
+    <div class="main_wrap">
+      <p class="home_title">Contact Me</p>
+      <div class="form_wrap">
+        <div class="form_wrap_item">
+          <p class="form_wrap_item_label">First Name</p>
+          <div class="form_wrap_item_input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="form_wrap_item">
+          <p class="form_wrap_item_label">Last Name</p>
+          <div class="form_wrap_item_input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="form_wrap_item">
+          <p class="form_wrap_item_label">Email</p>
+          <div class="form_wrap_item_input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="form_wrap_item">
+          <p class="form_wrap_item_label">Phone</p>
+          <div class="form_wrap_item_input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="form_wrap_item">
+          <p class="form_wrap_item_label">Project</p>
+          <div class="form_wrap_item_input">
+            <textarea rows="6"></textarea>
+          </div>
+        </div>
+        <div class="form_wrap_item">
+          <p class="form_wrap_item_label"></p>
+          <div class="form_wrap_item_input">
+            <button class="btn" style="position: relative; left: 11%;">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+  </main>
+</body>
+
+</html>
